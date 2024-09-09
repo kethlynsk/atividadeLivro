@@ -19,6 +19,7 @@ const store = (body) => {
     return 400
 }
 
+
 const update = (body, id) => {
     const novo = model(body, parseInt(id))
     const indice = db.findIndex(el => el.id == id)

@@ -29,6 +29,8 @@ const update = (body, id) => {
     return 400
 }
 
+
+
 const destroy = id => {
     const indice = db.findIndex(el => el.id == id)
     if (indice != -1) {
