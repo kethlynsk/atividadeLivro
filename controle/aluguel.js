@@ -1,4 +1,4 @@
-const model = require("../modelos/livro.js")
+const model = require("../modelos/aluguel.js")
 
 const db = []
 
@@ -8,12 +8,10 @@ const show = id => db.find(el => el.id == id)
 
 const store = (body) => {
     const novo = model(body)
-    console.log(novo);
 
     if (novo) {
         db.push(novo)
         return 201
-        
     }
 
     return 400
